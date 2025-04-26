@@ -98,7 +98,10 @@ Configure database connection:
 CURL 
 1. Total Revenue by region for a date range
 curl --location --request POST 'http://localhost:8000/sales-service/order/revenue_by_region?start_date=2024-01-01&end_date=2024-12-31'
-Response:{
+
+Response:
+
+{
     "revenue": [
         {
             "total_revenue": 2777.97,
@@ -123,7 +126,10 @@ Response:{
 2. Total Revenue by region for a date range
 
 curl --location --request POST 'http://localhost:8000/sales-service/order/revenue_by_category?start_date=2024-01-01&end_date=2024-12-31'
-Response:{
+
+Response:
+
+{
     "revenue": [
         {
             "total_revenue": 4606.96,
@@ -137,13 +143,31 @@ Response:{
 
 
  curl --location --request POST 'http://localhost:8000/sales-service/order/revenue_by_products?start_date=2024-01-01&end_date=2024-12-31'
-Response:{
+
+Response:
+
+{
     "revenue": [
         {
             "total_revenue": 4604.776075,
             "product_name": "UltraBoost Running Shoes"
         }
     ]
+}
+
+4. Total revenue by date range 
+
+curl --location --request POST 'http://localhost:8000/sales-service/order/revenue?start_date=2024-01-01&end_date=2024-12-31'
+
+
+Response:
+
+{
+    "revenue": {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31",
+        "total_revenue": 4606.96
+    }
 }
 
 Data Loading and Refreshing
