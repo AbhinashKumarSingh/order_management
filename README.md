@@ -1,4 +1,4 @@
-# order_management
+# sales_analytics_system
 
 Sales Analytics Backend System
 This repository contains a backend system designed for loading sales data, periodic data refreshing, and performing revenue analysis through a RESTful API. It demonstrates proficiency in database design, ETL (Extract, Transform, Load) pipelines, background processing, and building scalable APIs.
